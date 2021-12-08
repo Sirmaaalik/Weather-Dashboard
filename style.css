@@ -9,3 +9,22 @@
     font-size: 15px;
     color: white;
 }
+
+.left div {
+    height: 50%;
+}
+
+.card-body {
+    background-color: rgb(71, 2, 2);
+    color: white;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#searchbtn {
+    background-color: rgb(71, 2, 2);
+    color: whitesmoke;
+    border-radius: 40px;
+    size: 20px;
+}
