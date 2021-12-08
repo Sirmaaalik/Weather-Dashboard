@@ -13,6 +13,84 @@
     <link href=https://fonts.googleapis.com/css>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container-fluid row">
+
+        <!-- Search city inbox -->
+        <div class="col-3 left div justify-content-center pt-3">
+            <div class="search div mb-4">
+                <h5 class="justify-content-center pt-2 pl-3">Search by City:</h5>
+                <form class="form-inline my-2 my-lg-0 mt-3 ml-3"></form>
+                    <input class="form-control; mr-sm-2 float-left" type="search" placeholder="Search" id="searchbar"aria-label="search">
+                    <button id="searchbtn" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fa-search"></i></button>        
+                </form>
+            </div>
+            <h5 class="justify-content-center pt-2 pl-3">Searched for Cities</h5>
+            <div class="container my-3 col-12" id= "searched-cities-container"></div>
+        </div>
+
+        <!-- Current weather status -->
+        <div class="col-9 pt-3">          
+            <div class="row">
+                <div class="col">
+                    <h2 class="justify-content-center text-dark" id="city-name"></h2>
+                    <p id="today-temp"></p>
+                    <p id="today-humidity"></p>
+                    <p id="today-wind"></p>
+                    <p id="today-uv-index"></p>
+                </div>
+                <div class="col"> <img id="today-icon-div" src="">
+                    <div id="current-day" class="bg-light p-3"></div>
+                </div>
+            </div>          
+        </div>
+
+        <!-- 5 day weather forecast -->
+        <div class= "bg-light p-3 m-3 w-100">
+            <div class= "bg-light">
+                <H5 class= "text-dark">5 Day Weather Forecast</H5>
+            </div>
+            
+            <div class= "row justify-content-center">
+                <div id= "0date" class="card-body mx-2 my-2">
+                    <h5 id= "0date"></h5>
+                    <p id="0five-day-temp"></p>
+                    <p id="0five-day-humidity"></p>
+                    <img id="0five-day-icon" src="">
+                </div>
+                
+                <div id= "day1" class="card-body mx-2 my-2">
+                    <h5 id= "1date"></h5>
+                    <p id="1five-day-temp"></p>
+                    <p id="1five-day-humidity"></p>
+                    <img id="1five-day-icon" src="">
+                </div>
+                    
+                <div id= "day2" class="card-body mx-2 my-2">
+                    <h5 id= "2date"></h5>
+                    <p id="2five-day-temp"></p>
+                    <p id="2five-day-humidity"></p>
+                    <img id="2five-day-icon" src="">
+                </div>
+                    
+                        
+                <div id= "day3" class="card-body mx-2 my-2">
+                    <h5 id= "3date"></h5>
+                    <p id="3five-day-temp"></p>
+                    <p id="3five-day-humidity"></p>
+                    <img id="3five-day-icon" src="">
+                </div>
+
+                <div id= "day4" class="card-body mx-2 my-2">
+                    <h5 id= "4date"></h5>
+                    <p id="4five-day-temp"></p>
+                    <p id="4five-day-humidity"></p>
+                    <img id="4five-day-icon" src="">
+                </div>
+            </div>
+        </div>    
+    </div>
 </body>
 </html>
